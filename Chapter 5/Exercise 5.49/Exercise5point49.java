@@ -34,7 +34,7 @@ class Exercise5point49 {
 				vowels++;
 			}
 			
-			else if((ch >= 'A' && ch <= 'Z' )) {
+			else if((ch >= 'A' && ch <= 'Z' && ch != 'A' && ch != 'A'&& ch != 'E'&& ch != 'I'&& ch != 'O' && ch != 'U')) {
 				consonants++;
 			}
 			

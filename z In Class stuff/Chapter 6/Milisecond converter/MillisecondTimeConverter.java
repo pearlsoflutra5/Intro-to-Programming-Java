@@ -1,12 +1,12 @@
 /*
 Kacie Rae
 10-11-18
-Exercise 6.25 Converting milliseconds to regular time. 
+Exercise 6.25 Converting milliseconds to regular time with days. 
 */
 
 import java.util.Scanner;
 
-class Exercise6point25 {
+class MillisecondTimeConverter {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter a time in milliseconds: ");
@@ -20,10 +20,13 @@ class Exercise6point25 {
 		int seconds = (int)(totalSeconds % 60);
 		long totalMinutes = totalSeconds / 60;
 		int minutes = (int)(totalMinutes % 60);
-		long hours = totalMinutes / 60;
-	
+		long totalHours = totalMinutes / 60;
+		int hours = (int)(totalHours % 24);
+		long days = totalHours / 24;
 
 		
-		return hours + ":" + minutes + ":" + seconds; 
+		return days + ":" + hours + ":" + minutes + ":" + seconds; 
+		//added days for fun but all course code is here.   
+		
 	}
 }

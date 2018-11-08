@@ -18,7 +18,6 @@ class Exercise6point17 {
 	}// end of main method
 	
 	public static void printMatrix(int n) {
-		int lineNumber = 0;
 		for (int r = 1; r <= n; r++) { //loop for rows 
 			for (int c = 1; c <= n; c++) { // loop for columns
 				System.out.print((int)(Math.random() * 2) + " ");

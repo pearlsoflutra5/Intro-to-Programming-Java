@@ -1,10 +1,6 @@
-class Exercise8point5 {
+class Exercise8point5Exercise8pont5 {
 	public static void main(String[] args) {
 		
 	}
-	
-	public static double[][] addMatrix(double[][] a, double[][] b){
-	
-	}// end of add matrix
-	
+	public static double[][] addMatrix(double[][] a, double[][] b)
 }

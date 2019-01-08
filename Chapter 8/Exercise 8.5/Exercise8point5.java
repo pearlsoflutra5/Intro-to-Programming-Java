@@ -11,10 +11,12 @@ class Exercise8point5 {
 		Scanner input = new Scanner(System.in);
 		
 		//n is row m is column
-		final int N = 3;
-		final int M = 3;
+		final int R = 3;
+		final int C = 3;
+		System.out.println("Enter a 3 * 3 matrix for both matrices.  ");
+		
 		System.out.print("Enter matrix A:");
-		double [][] matrixA = new double[N][M];
+		double [][] matrixA = new double[R][C];
 		
 		for(int row = 0; row < matrixA.length; row++) {
 			for(int column = 0; column < matrixA[row].length; column++ ){
@@ -23,7 +25,7 @@ class Exercise8point5 {
 		}
 		
 		System.out.print("Enter matrix B:");
-		double [][] matrixB = new double[N][M];
+		double [][] matrixB = new double[R][C];
 		
 		for(int row = 0; row < matrixB.length; row++) {
 			for(int column = 0; column < matrixB[row].length; column++ ){

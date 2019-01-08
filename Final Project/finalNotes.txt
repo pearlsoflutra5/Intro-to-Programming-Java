@@ -1,0 +1,96 @@
+start
+pick from list: math, english, chemistry, history
+pick from sublist : matrices, 
+execute code for pick
+have ability to run miultiple times
+
+
+
+*** extra codes I may try to use later: ***
+
+	public static String[][] RandomizeArray(String[][] array){
+		Random rgen = new Random();			
+		for (int i = 0; i < array.length; i++) {
+			int randomPosition = rgen.nextInt(array.length);
+			String[][] temp = array[i][];
+			array[i][] = array[randomPosition][];
+			array[randomPosition][] = temp;
+		}
+		return array;
+	}
+	
+	public static void knowFirstColumnChemistry(String[][] list){
+			Scanner input = new Scanner(System.in);
+			int correct = 0;
+			for(int i = 0; i < list.length ; i++){
+				System.out.print("What is the formula of " + list[i][0] + ": ");
+				String s = input.nextLine();
+				if (s.equalsIgnoreCase(list[i][1])){
+					System.out.println("Correct!");
+					correct++;
+				}	
+				else{
+					System.out.println("The correct answer should be " + list[i][1]);
+				}
+			}
+			System.out.println("\nThe correct count is " + correct);
+			return;
+		}
+		public static void knowSecondColumnChemistry(String[][]list){
+			Scanner input = new Scanner(System.in);
+			int correct = 0;
+			for(int i = 0; i < list.length ; i++){
+				System.out.print("What is the name of " + list[i][1] + ": ");
+				String s = input.nextLine();
+				if (s.equalsIgnoreCase(list[i][0])){
+					System.out.println("Correct!");
+					correct++;
+				}	
+				else {
+					System.out.println("The correct answer should be " + list[i][0]);
+				}
+			}
+			System.out.println("\nThe correct count is " + correct);
+			return;		
+			
+		}
+		
+		
+*** Extra arrays that were not used  at the time ***
+
+	public static String[][] inventorsBusinesses(){
+		String [][] list = {
+			{"Alexander Graham Bell", "Bell Telephone Company/AT&T"},
+			{"Thomas Edison", "General Electric"},
+								
+		};
+		return list;
+	}
+	
+	public static String[][] bigStrikes(){
+		String [][] list = {
+			{"Kights of Labor", "1869"},
+			{"Great Railroad Strike", "1877"},
+			{"Haymarket Riot", "1886"},
+						
+		};
+		return list;
+	}
+	
+	
+*** Outline for easily created String arrays ***
+	
+	public static String[][] e(){
+			String [][] list = {
+			{" ", " "},
+			{" ", " "},
+		
+				
+			};
+			return list;
+		}
+
+ 
+
+
+
